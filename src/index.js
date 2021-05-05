@@ -82,7 +82,6 @@ function App({ name }) {
   const [loginProps, resetLogin] = useInput("");
   const [titleProps, resetTitle] = useInput("");
   const [login, setLogin] = useState("");
-  const [shouldFetch, setShouldFetch] = useState(false);
   const { loading, result, error } = useFetch({ uri: `https://api.github.com/users/`, login: login });
 
   useEffect(() => {
